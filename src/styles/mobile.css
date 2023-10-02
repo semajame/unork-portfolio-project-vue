@@ -1,0 +1,570 @@
+:root {
+  --gray-color: #222222;
+  --font-color: #ffffff99;
+  --black-color: #000;
+  --white-color: #fff;
+  --blue-color: #3c5ccf;
+  --purple-color: #5032c1;
+  --yellow-color: #fbb348;
+  --green-color: #3ccf91;
+  --pink-color: #ff6996;
+  --dark-gray-color: #111;
+}
+
+@media (max-width: 1024px) {
+  main {
+    gap: 5rem;
+  }
+
+  .crafted__container {
+    display: flex;
+    flex-direction: column;
+    padding: 12rem 2rem;
+  }
+
+  .crafted__container {
+    gap: 2rem;
+  }
+
+  .crafted__right {
+    margin-top: 1rem;
+  }
+
+  .crafted__header {
+    font-size: 2.875 !important;
+    line-height: 1.1;
+  }
+
+  .main__paragraph {
+    margin: 2rem 0;
+  }
+
+  .ipad {
+    margin-left: 0;
+  }
+
+  .services__header {
+    margin-top: 1.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+  }
+
+  .crafted__right {
+    width: 100%;
+    margin-top: 4rem;
+    text-align: left;
+  }
+
+  .crafted__header {
+    font-size: 4rem;
+    max-width: 740px;
+    line-height: 60px;
+  }
+
+  .crafted__paragraph {
+    font-size: 1.2875rem;
+    width: 100%;
+  }
+
+  .featured__container {
+    padding: 7rem 2rem;
+  }
+
+  .u__container {
+    margin: 5rem 2rem 0 2rem;
+  }
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 820px) {
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header nav ul {
+    position: absolute;
+    top: -30rem;
+    background-color: var(--dark-gray-color);
+    flex-direction: column;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    transition: 350ms;
+    z-index: -1;
+  }
+
+  header nav ul.active {
+    transition: 350ms;
+    top: 6.5rem;
+  }
+
+  header nav ul li {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--gray-color);
+  }
+
+  header nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  header nav ul li a {
+    font-size: 1.4rem;
+    width: 100%;
+    display: block;
+  }
+
+  .home {
+    padding-left: 1rem;
+  }
+
+  .hamburger__icon {
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  .vertical__line {
+    display: none;
+  }
+
+  .fun__input__container {
+    position: relative;
+  }
+
+  .right__header {
+    gap: 1rem;
+  }
+
+  /* MAIN */
+
+  main {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 10rem 2rem;
+  }
+
+  .main__right__container,
+  .main__left__container {
+    width: 100%;
+  }
+
+  .main__right__container img {
+    width: 100% !important;
+  }
+
+  .main__header {
+    width: 100%;
+  }
+
+  .main__company {
+    gap: 1rem;
+  }
+
+  .main__right__container img {
+    width: 450px;
+  }
+
+  /* SERVICES */
+
+  .services__container {
+    padding: 0 2rem;
+  }
+
+  /* CRAFTED */
+
+  .crafted__container {
+    padding: 12rem 2rem 5rem 2rem;
+  }
+
+  .ipad {
+    max-width: 700px;
+  }
+
+  .crafted__right {
+    margin-top: 1rem;
+  }
+
+  /* CONTACT */
+
+  .contacts__container {
+    padding: 7rem 2rem;
+    flex-direction: column;
+  }
+
+  .contacts__right {
+    margin-top: 2rem;
+  }
+
+  .contacts__header {
+    max-width: 600px;
+    margin: 1.5rem 0 1.5rem 0;
+  }
+
+  .first__name__container,
+  .last__name__container {
+    width: 100%;
+  }
+
+  .email {
+    margin-left: 0;
+  }
+
+  .get__started {
+    position: absolute;
+    top: 0.5rem;
+    left: 28rem;
+  }
+
+  /* FUN FACTS */
+  .fun__facts__container {
+    padding: 7rem 2rem;
+  }
+
+  /* MARKETING */
+
+  .marketing__container {
+    padding: 7rem 2rem;
+  }
+
+  /* GET STARTED */
+
+  .get__started__container {
+    padding: 8rem 2rem 5rem 2rem;
+  }
+
+  /* FOOTER */
+
+  .footer__container {
+    padding: 0 2rem 5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .get__started {
+    left: 26.5rem;
+  }
+}
+
+@media (max-width: 712px) {
+  .get__started__container {
+    padding: 8rem 0 2rem 0;
+  }
+
+  .ipad {
+    max-width: 650px;
+  }
+
+  .get__started {
+    left: 24.5rem;
+  }
+
+  .crafted__header {
+    font-size: 3rem;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main__header {
+    font-size: 55px;
+    line-height: 1.1;
+  }
+  .ipad {
+    max-width: 540px;
+  }
+
+  .get__started {
+    left: 23rem;
+  }
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__paragraph {
+    max-width: 350px;
+  }
+
+  .footer__ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .socials__container {
+    display: none;
+  }
+  .right__footer {
+    margin-top: 2rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 430px) {
+  .main__paragraph {
+    font-size: 1.3rem;
+  }
+
+  header nav ul.active {
+    top: 6rem;
+  }
+
+  .search__button {
+    padding: 0;
+  }
+
+  .main__company img {
+    width: 90px;
+  }
+
+  .modal__input {
+    border-radius: 5px !important;
+  }
+
+  .modal__search {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    border-radius: 5px !important;
+    margin-left: 0;
+  }
+
+  .modal__input__container {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+
+  .buy__unork {
+    display: none;
+  }
+
+  .crafted__header {
+    font-size: 2.5rem;
+  }
+
+  .ipad {
+    max-width: 350px;
+  }
+
+  /* FEATURED */
+
+  .featured__container {
+    padding: 4rem 2rem;
+  }
+
+  .featured__box__container {
+    grid-template-columns: auto;
+  }
+
+  .featured__box__info {
+    flex-direction: column-reverse;
+    justify-content: left;
+    align-items: start;
+  }
+
+  /* FUN FACTS */
+
+  .fun__input__container {
+    position: static;
+  }
+
+  .email {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .get__started {
+    position: static;
+    width: 100%;
+  }
+
+  .terms__conditions {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
+  .signing {
+    text-align: left;
+    line-height: 15px;
+  }
+
+  /* TESTIMONIALS */
+
+  .testimonials__header {
+    font-size: 2.5rem;
+  }
+
+  /* CONTACTS */
+
+  .contacts__header {
+    font-size: 2.8rem;
+    line-height: 40px;
+  }
+
+  .first__name__container,
+  .last__name__container {
+    width: 48%;
+  }
+
+  /* MARKETING */
+
+  .started__unork {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  .get__started__button {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .started__button {
+    max-width: 205px;
+    margin: 1rem auto;
+  }
+
+  /* FOOTER */
+}
+
+@media (max-width: 390px) {
+  .marketing__date {
+    display: block;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .right__header {
+    flex-direction: row-reverse;
+    gap: 0.2rem;
+  }
+
+  main {
+    padding: 8rem 1rem;
+  }
+
+  .main__header {
+    font-size: 3rem;
+  }
+
+  .main__paragraph {
+    font-size: 1.2rem;
+  }
+
+  .main__company {
+    gap: 0;
+  }
+
+  .main__company img {
+    width: 70px;
+  }
+
+  .make__blue {
+    font-size: 0.925rem;
+  }
+
+  .services__header {
+    font-size: 2rem;
+  }
+
+  .services__container {
+    padding: 0 1rem;
+  }
+
+  .services__content {
+    grid-template-columns: 1fr;
+  }
+
+  .u__container {
+    margin: 5rem 1rem;
+  }
+
+  .u__letter {
+    left: -4.5rem;
+  }
+
+  .u__paragraph {
+    font-size: 2.5rem;
+  }
+
+  .carefully__crafted {
+    font-size: 0.7rem;
+  }
+
+  .crafted__container {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+
+  .crafted__left img {
+    width: 260px;
+  }
+
+  .crafted__header {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+
+  .crafted__paragraph {
+    font-size: 1.1rem;
+  }
+
+  /* FEATURED */
+
+  .featured__container {
+    padding: 4rem 1rem;
+  }
+
+  .featured__box__header {
+    text-align: left;
+  }
+
+  .fun__facts__container {
+    padding: 5rem 1rem;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials__header {
+    font-size: 2rem;
+  }
+  .testimonials__box {
+    width: fit-content;
+  }
+
+  /*CONTACTS */
+
+  .contacts__container {
+    padding: 5rem 1rem;
+  }
+
+  /* MARKETING */
+
+  .marketing__box__container {
+    grid-template-columns: auto;
+  }
+
+  /* STARTED */
+
+  .started__unork {
+    font-size: 2.5rem;
+    line-height: 40px;
+  }
+
+  .started__number {
+    font-size: 1rem;
+  }
+
+  .make__sure {
+    line-height: 20px;
+  }
+
+  /* FOOTER */
+
+  .footer__container {
+    padding: 0 1rem 5rem 1rem;
+  }
+}
