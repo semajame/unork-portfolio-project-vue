@@ -24,16 +24,6 @@
               >News</router-link
             >
           </li>
-          <li>
-            <router-link :to="{ name: 'style-guide' }" class="router__link"
-              >Style Guide</router-link
-            >
-          </li>
-          <li>
-            <router-link :to="{ name: 'image-licensing' }" class="router__link"
-              >Image Licensing</router-link
-            >
-          </li>
         </ul>
       </nav>
     </div>
@@ -43,12 +33,14 @@
           :href="items.url"
           v-for="items in socialsContent"
           :key="items.id"
-          target="_blank">
+          target="_blank"
+        >
           <img
             :src="items.images"
             :aria-label="items.ariaLabel"
             :alt="items.alt"
-            class="social-icon" />
+            class="social-icon"
+          />
         </a>
       </div>
       <a href="#" class="contacts__unork"> {{ contactsUnork }} </a>

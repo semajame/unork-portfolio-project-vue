@@ -35,18 +35,21 @@
             :src="hamburgerIcon"
             loading="lazy"
             width="30"
-            alt="Hamburger Icon" />
+            alt="Hamburger Icon"
+          />
         </button>
 
         <button
           type="button"
           class="search__button btn"
           data-bs-toggle="modal"
-          data-bs-target="#exampleModal">
+          data-bs-target="#exampleModal"
+        >
           <img
             src="https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9e03dbd70f95d8a9c0e2_search-outline.svg"
             alt="Search Icon"
-            class="search__icon" />
+            class="search__icon"
+          />
           Search
         </button>
 

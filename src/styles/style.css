@@ -905,8 +905,7 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 15rem 5rem;
+  padding: 10rem 4rem;
 }
 
 .about h1 {
@@ -965,10 +964,10 @@ p {
 .heroes__box {
   margin: 4rem 0;
   display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   place-items: center;
   padding: 0 4rem;
+  gap: 2rem;
 }
 
 .heroes__header {

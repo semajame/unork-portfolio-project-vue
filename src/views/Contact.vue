@@ -14,7 +14,7 @@
 
 <script>
 import Footer from "../components/Footer.vue";
-import ContactUs from "../components/Sections/Contacts.vue";
+import ContactUs from "../components/Sections/ContactUs.vue";
 export default {
   data() {
     return {

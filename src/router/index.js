@@ -4,8 +4,6 @@ import About from "../views/About.vue";
 import News from "../views/News.vue";
 import Contact from "../views/Contact.vue";
 import Template from "../views/Template.vue";
-import StyleGuide from "../views/StyleGuide.vue";
-import ImageLicensing from "../views/ImageLicensing.vue";
 
 const routes = [
   {
@@ -32,16 +30,6 @@ const routes = [
     path: "/template",
     name: "template",
     component: Template,
-  },
-  {
-    path: "/style-guide",
-    name: "style-guide",
-    component: StyleGuide,
-  },
-  {
-    path: "/image-licensing",
-    name: "image-licensing",
-    component: ImageLicensing,
   },
 ];
 

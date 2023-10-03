@@ -14,7 +14,8 @@
           :alt="items.logoAlt"
           class="logo-image"
           v-for="items in images"
-          :key="items.id" />
+          :key="items.id"
+        />
       </div>
       <span class="make__blue"> {{ makeBlue }} </span>
     </section>
@@ -37,7 +38,7 @@ import U from "./Sections/U.vue";
 import Crafted from "./Sections/Crafted.vue";
 import Featured from "./Sections/Featured.vue";
 import FunFacts from "./Sections/FunFacts.vue";
-import Contacts from "./Sections/Contacts.vue";
+import Contacts from "./Sections/ContactUs.vue";
 import Marketing from "./Sections/Marketing.vue";
 
 export default {
