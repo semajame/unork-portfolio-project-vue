@@ -1,7 +1,37 @@
-<template></template>
+<template>
+  <main class="contact__container">
+    <h1>
+      {{ contactHeader }}
+    </h1>
+
+    <p>
+      {{ contactPara }}
+    </p>
+  </main>
+  <ContactUs />
+  <Footer />
+</template>
 
 <script>
-export default {};
+import Footer from "../components/Footer.vue";
+import ContactUs from "../components/Sections/Contacts.vue";
+export default {
+  data() {
+    return {
+      contactHeader: "Contact Us",
+      contactPara: "Get the price and proposal to your Email!",
+    };
+  },
+
+  components: {
+    Footer,
+    ContactUs,
+  },
+};
 </script>
 
-<style></style>
+<style scoped>
+.footer__container {
+  padding-top: 5rem;
+}
+</style>

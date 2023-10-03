@@ -39,10 +39,13 @@
       />
     </div>
   </section>
+  <Services />
+  <U />
+
   <section class="heroes__section">
     <div class="heroes__header">
-      <span class="team">Team</span>
-      <h2>Meet our Heroes</h2>
+      <span class="team">{{ heroesTeam }}</span>
+      <h2>{{ heroesHeader }}</h2>
     </div>
 
     <div class="heroes__box">
@@ -63,8 +66,7 @@
       </div>
     </div>
   </section>
-  <Services />
-  <U />
+  <FunFacts />
   <Footer />
 </template>
 
@@ -73,6 +75,7 @@ import Services from "../components/Sections/Services.vue";
 
 import U from "../components/Sections/U.vue";
 import Footer from "../components/Footer.vue";
+import FunFacts from "../components/Sections/FunFacts.vue";
 
 export default {
   data() {
@@ -89,7 +92,8 @@ export default {
 
       secondsectionParaTwo:
         "Intuition and strategy integrate the research methodology that we also apply to traditional media.",
-
+      heroesHeader: "Meet our Heroes",
+      heroesTeam: "Team",
       heroesProfile: [
         {
           profile:
@@ -136,6 +140,7 @@ export default {
     Services,
     U,
     Footer,
+    FunFacts,
   },
 };
 </script>
