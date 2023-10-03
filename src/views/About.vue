@@ -56,29 +56,8 @@
           {{ items.title }}
         </span>
         <div class="socials__container">
-          <a href="#">
-            <img
-              src="https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b3685e7d35cd0b4_linkedin.png"
-              alt="LinkedIn"
-            />
-          </a>
-          <a href="#">
-            <img
-              src="https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b36853d535cd0b2_instagram.png"
-              alt="Instagram"
-            />
-          </a>
-          <a href="#">
-            <img
-              src="https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b3685060f5cd0b6_facebook.png"
-              alt="Twitter"
-            />
-          </a>
-          <a href="#">
-            <img
-              src="https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b3685c5c25cd0b8_dribbble.png"
-              alt="Dribble"
-            />
+          <a href="#" v-for="links in socials">
+            <img :src="links.link" :alt="links.alt" />
           </a>
         </div>
       </div>
@@ -129,6 +108,25 @@ export default {
             "https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62e8f5cadbfdcc283bd2884c_team-3.jpg",
           name: "Arty D.",
           title: "Developer",
+        },
+      ],
+
+      socials: [
+        {
+          link: "https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b3685e7d35cd0b4_linkedin.png",
+          alt: "LinkedIn Icon",
+        },
+        {
+          link: "https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b36853d535cd0b2_instagram.png",
+          alt: "Instagram Icon",
+        },
+        {
+          link: "https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b3685060f5cd0b6_facebook.png",
+          alt: "Facebook Icon",
+        },
+        {
+          link: "https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b3685c5c25cd0b8_dribbble.png",
+          alt: "Dribble Icon",
         },
       ],
     };

@@ -559,9 +559,10 @@ main {
 }
 
 .testimonials__box {
-  height: 350px;
+  height: 100%;
   width: 350px;
   padding: 2rem;
+
   border-radius: 10px;
   background-color: var(--dark-gray-color);
 }
@@ -570,6 +571,7 @@ main {
   color: hsla(0, 0%, 100%, 0.8);
   text-align: left;
   line-height: 20px;
+  font-size: 1rem;
   margin: 1rem 0 2rem 0;
   font-weight: 600;
 }
