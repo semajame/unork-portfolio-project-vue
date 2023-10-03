@@ -39,6 +39,51 @@
       />
     </div>
   </section>
+  <section class="heroes__section">
+    <div class="heroes__header">
+      <span class="team">Team</span>
+      <h2>Meet our Heroes</h2>
+    </div>
+
+    <div class="heroes__box">
+      <div class="heroes" v-for="items in heroesProfile">
+        <img :src="items.profile" alt="Person Icon" />
+
+        <h4 class="heroes__name">
+          {{ items.name }}
+        </h4>
+        <span class="heroes__title">
+          {{ items.title }}
+        </span>
+        <div class="socials__container">
+          <a href="#">
+            <img
+              src="https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b3685e7d35cd0b4_linkedin.png"
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b36853d535cd0b2_instagram.png"
+              alt="Instagram"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b3685060f5cd0b6_facebook.png"
+              alt="Twitter"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62ea9d614b3685c5c25cd0b8_dribbble.png"
+              alt="Dribble"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
   <Services />
   <U />
   <Footer />
@@ -65,6 +110,27 @@ export default {
 
       secondsectionParaTwo:
         "Intuition and strategy integrate the research methodology that we also apply to traditional media.",
+
+      heroesProfile: [
+        {
+          profile:
+            "https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62e8f5cadbfdcc62c4d2884f_team-1.jpeg",
+          name: "John D.",
+          title: "Co Founder",
+        },
+        {
+          profile:
+            "https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62e8f5cadbfdcc3a59d28846_team-2.jpg",
+          name: "Maria L.",
+          title: "Designer",
+        },
+        {
+          profile:
+            "https://assets.website-files.com/62e8f5c9dbfdccaf94d287ac/62e8f5cadbfdcc283bd2884c_team-3.jpg",
+          name: "Arty D.",
+          title: "Developer",
+        },
+      ],
     };
   },
 
@@ -75,60 +141,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.about {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 15rem 5rem;
-}
-
-.about h1 {
-  color: var(--white-color);
-  font-size: 5rem;
-}
-
-.right__about {
-  max-width: 500px;
-  font-size: 1.5rem;
-}
-
-.para__white {
-  color: var(--white-color);
-  font-size: 1.5rem;
-}
-
-p {
-  font-size: 1.5rem;
-  line-height: 30px;
-  color: var(--font-color);
-}
-
-.left__about,
-.right__about {
-  width: 50%;
-}
-
-.about__section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 4rem 6rem 4rem;
-}
-
-.about__section .photo {
-  float: right;
-  width: 80%;
-}
-
-.left__second,
-.right__second {
-  width: 50%;
-}
-
-.left__second p {
-  max-width: 550px;
-}
-</style>

@@ -274,6 +274,8 @@ main {
 }
 
 .u__paragraph {
+  font-size: 3rem;
+  line-height: 45px;
   max-width: 800px;
   margin: 2rem auto;
   color: var(--white-color);
@@ -894,4 +896,121 @@ label {
   color: var(--font-color);
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15rem 5rem;
+}
+
+.about h1 {
+  color: var(--white-color);
+  font-size: 5rem;
+}
+
+.right__about {
+  max-width: 500px;
+  font-size: 1.5rem;
+}
+
+.para__white {
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 30px;
+  color: var(--font-color);
+}
+
+.left__about,
+.right__about {
+  width: 50%;
+}
+
+.about__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4rem 6rem 4rem;
+}
+
+.about__section .photo {
+  float: right;
+  width: 80%;
+}
+
+.left__second,
+.right__second {
+  width: 50%;
+}
+
+.left__second p {
+  max-width: 550px;
+}
+
+.heroes__section {
+  padding: 0 0 4rem 0;
+  background-color: var(--dark-gray-color);
+  text-align: center;
+}
+
+.heroes__box {
+  margin: 4rem 0;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  padding: 0 4rem;
+}
+
+.heroes__header {
+  padding: 8rem 0 5rem 0;
+}
+
+.team {
+  color: var(--yellow-color);
+  font-size: 1.2rem;
+}
+
+.heroes__section h2 {
+  font-size: 3.5rem;
+  color: var(--white-color);
+}
+
+.heroes {
+  width: 350px;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: var(--gray-color);
+}
+
+.heroes__name {
+  color: var(--white-color);
+}
+
+.heroes__title {
+  color: var(--font-color);
+}
+
+.heroes img {
+  margin: 0 auto 1rem auto;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.socials__container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.socials__container a img {
+  border-radius: 0;
+  width: 20px;
 }
