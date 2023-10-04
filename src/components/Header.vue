@@ -21,9 +21,7 @@
               <router-link :to="{ name: 'contact' }" class="router__link"
                 >Contact</router-link
               >
-              <router-link :to="{ name: 'template' }" class="router__link"
-                >Template</router-link
-              >
+            
             </li>
           </ul>
         </nav>
