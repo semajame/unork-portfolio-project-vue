@@ -43,7 +43,7 @@
           />
         </a>
       </div>
-      <a href="#" class="contacts__unork"> {{ contactsUnork }} </a>
+
       <span class="footer__number"> {{ contactsNumber }} </span>
     </div>
   </footer>
@@ -91,7 +91,6 @@ export default {
         },
       ],
 
-      contactsUnork: "unork@template.com",
       contactsNumber: "1800 832 993",
     };
   },

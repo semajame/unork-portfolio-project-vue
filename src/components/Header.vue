@@ -21,7 +21,6 @@
               <router-link :to="{ name: 'contact' }" class="router__link"
                 >Contact</router-link
               >
-            
             </li>
           </ul>
         </nav>
@@ -50,8 +49,6 @@
           />
           Search
         </button>
-
-        <a href="#" class="buy__unork"> {{ buyUnork }}</a>
       </section>
     </nav>
   </header>

@@ -3,7 +3,6 @@
     <div class="contacts__left">
       <span class="contacts__span"> {{ contactsSpan }} </span>
       <h2 class="contacts__header">{{ contactsHeader }}</h2>
-      <a href="#" class="contacts__unork"> {{ contactsUnork }} </a>
     </div>
 
     <div class="contacts__right">
@@ -32,7 +31,8 @@
             type="text"
             class="message"
             placeholder="How can we help?"
-            maxlength="4000">
+            maxlength="4000"
+          >
           </textarea>
         </div>
         <button class="send__message">{{ sendMessage }}</button>
@@ -49,7 +49,7 @@ export default {
     return {
       contactsSpan: "Contact Us",
       contactsHeader: "Get in touch with our friendly team.",
-      contactsUnork: "unork@template.com",
+
       firstName: "First Name",
       lastName: "Last Name",
       email: "Email",

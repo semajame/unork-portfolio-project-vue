@@ -49,7 +49,7 @@
     </div>
 
     <div class="heroes__box">
-      <div class="heroes" v-for="items in heroesProfile">
+      <div class="heroes" v-for="items in heroesProfile" :key="items.id">
         <img :src="items.profile" alt="Person Icon" />
 
         <h4 class="heroes__name">
@@ -59,7 +59,7 @@
           {{ items.title }}
         </span>
         <div class="socials__container">
-          <a href="#" v-for="links in socials">
+          <a href="#" v-for="links in socials" :key="links.id">
             <img :src="links.link" :alt="links.alt" />
           </a>
         </div>

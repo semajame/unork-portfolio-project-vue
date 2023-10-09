@@ -633,24 +633,6 @@ main {
   font-size: 3.8rem;
 }
 
-.contacts__unork {
-  text-decoration: none;
-  color: var(--font-color);
-  font-weight: 500;
-  font-size: 1.1rem;
-  position: relative;
-}
-
-.contacts__unork::before {
-  content: "";
-  position: absolute;
-  height: 1px;
-  top: 1.5rem;
-  width: 0px;
-  background-color: var(--font-color);
-  transition: 250ms ease-out;
-}
-
 .contacts__unork:hover::before {
   width: 170px;
 }
