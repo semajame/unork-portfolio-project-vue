@@ -508,6 +508,14 @@
     display: block;
     margin-top: 1rem;
   }
+
+  .u__paragraph {
+    font-size: 2rem;
+  }
+
+  .u__letter {
+    left: -3.5rem;
+  }
 }
 
 @media (max-width: 300px) {
