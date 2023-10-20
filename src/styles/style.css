@@ -214,7 +214,6 @@ main {
 
 .services__content {
   margin-top: 3rem;
-  max-height: 80vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
